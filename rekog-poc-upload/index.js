@@ -1,10 +1,7 @@
-var superagent = require('superagent');
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 var request = require('request');
 var s3 = new AWS.S3();
-var crypto = require('crypto');
-var md5 = require('md5');
 
 exports.handler = function(event, context) {
     console.log(event.queryStringParameters);
@@ -49,7 +46,7 @@ exports.handler = function(event, context) {
             context.succeed({
                 statusCode: 200,
                 headers: {},
-                body: '{"yo": "oy"}'
+                body: JSON.stringify({filename: filename, bucket: 'rekognition-poc'})
             });
         });
     });
