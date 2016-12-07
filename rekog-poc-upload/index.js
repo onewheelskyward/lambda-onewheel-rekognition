@@ -50,30 +50,4 @@ exports.handler = function(event, context) {
             });
         });
     });
-
-    // request(event.queryStringParameters.uri, function(err, res, body) {
-    //     // console.log('body: ' + JSON.stringify(body));
-    //     if (err) {
-    //         console.log(err);
-    //     }
-    //     console.log("res.headers: " + JSON.stringify(res.headers));
-    //
-    //     // var hash = md5(res.body);
-    //
-    //     // console.log('hash: ' + JSON.stringify(hash));
-    //     s3.putObject({
-    //         Bucket: 'rekognition-poc',
-    //         Key: 'filename',
-    //         ContentType: res.headers['content-type'],
-    //         ContentLength: res.headers['content-length'],
-    //         Body: res.body // buffer
-    //     }, function(err, res) {
-    //         console.log(err, res);
-    //         context.succeed({
-    //             statusCode: 200,
-    //             headers: {},
-    //             body: '{"yo": "oy"}'
-    //         });
-    //     });
-    // });
 };
