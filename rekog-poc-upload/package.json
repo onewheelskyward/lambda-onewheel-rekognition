@@ -1,0 +1,32 @@
+{
+  "name": "lambda-onewheel-darksky",
+  "version": "0.0.0",
+  "description": "A node interface to DarkSky's excellent api- returning data that can be used to present graphical representations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onewheelskyward/node-onewheel-darksky.git"
+  },
+  "keywords": [
+    "darksky",
+    "weather",
+    "node",
+    "lambda",
+    "ansirain"
+  ],
+  "author": "Andrew Kreps",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onewheelskyward/node-onewheel-darksky/issues"
+  },
+  "homepage": "https://github.com/onewheelskyward/node-onewheel-darksky#readme",
+  "dependencies": {
+    "aws-sdk": "^2.7.11",
+    "md5": "^2.2.1",
+    "request": "^2.79.0",
+    "superagent": "^3.0.0"
+  }
+}
